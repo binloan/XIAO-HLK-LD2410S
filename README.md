@@ -1,4 +1,4 @@
-# HLK-LD2410S
+# [HLK-LD2410S](#hlk-ld2410s)
 Arduino library for **low power human presence sensor**  module **HLK-LD2410S**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -14,7 +14,7 @@ Arduino library for **low power human presence sensor**  module **HLK-LD2410S**
 
 ---
 
-## 🧭 Module Types
+## 🧭 [Module Types](#-module-types)
 
 <p float="left">
   <img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/HLK-2410S_pinout.png" width="45%" />
@@ -25,15 +25,30 @@ Arduino library for **low power human presence sensor**  module **HLK-LD2410S**
 
 
 ## 📚 Table of Contents
-{:toc}
-## Overview
+- [HLK-LD2410S](#hlk-ld2410s)
+- [Module Types](#-module-types)
+- [Overview](#overview)
+- [Important Notes](#️-important-notes)
+- [Pin Description](#-pin-description)
+- [ESP32 Connection Table](#-esp32-connection-table)
+- [Serial Protocols](#-serial-protocols)
+    - [Switch the module output mode](#--switch-the-module-output-mode)
+    - [Read the firmware version command](#--read-the-firmware-version-command)
+    - [Enable configuration command](#--enable-configuration-command)
+    - [End configuration command](#--end-configuration-command)
+    - [Write Serial number command](#--write-serial-number-command)
+    - [Read serial number command](#--read-serial-number-command)
+    - [Write generic parameter commands](#--write-generic-parameter-commands)
+    - [Read common parameter commands](#--read-common-parameter-commands)
+- [Example Code (ESP32)](#-example-code-esp32)
+## [Overview](#overview)
 The **HLK-LD2410S** is a battery-powered ultra-low-power milimeter-wave sensor based on Hi-Link's milimeter-wave sensor chip.
 - Intergrated intelligent milimeter wave sensor SoC 24GHz 
 - Uses millimeter wave sensor distance measurement technology and ICL1112 chip
 advanced proprietary radar signal processing and low power control technology to achieve accurate
 perception of moving, micromotion and standing human body.
 
-## ⚠️ Important Notes
+## ⚠️ [Important Notes](#️-important-notes)
 - Power supply 3.0 -3.6V , recommend 3.3V
 - Average working current max 0.6mA 
 - Max range detection range 10m
@@ -46,12 +61,12 @@ perception of moving, micromotion and standing human body.
     - HLK-LD2410S data communication uses a small-endian format, and all data in the following table is
     hexadecimal.
 
-## 🧷 Pin Description
+## 🧷 [Pin Description](#-pin-description)
 
 ![Pin description](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/pinout.png)
 
 
-## 🔗 ESP32 Connection Table
+## 🔗 [ESP32 Connection Table](#-esp32-connection-table)
 
 | 🆔 No | 📟 LD6002 Pin | ⚙️ Function         | 📲 ESP32 Pin   |
 |:----:|:-------------:|:------------------:|:-------------:|
@@ -63,11 +78,11 @@ perception of moving, micromotion and standing human body.
 ---
 
 
-## 📟 Serial Protocols
+## 📟 [Serial Protocols](#-serial-protocols)
 
 ### *- Baudrate: 115200_8N1*
 
-### - Switch the module output mode
+### - [Switch the module output mode](#--switch-the-module-output-mode)
 ![Switch the module output mode](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Switch%20the%20module%20output%20mode.png)
 
 ``` cpp
@@ -110,7 +125,7 @@ bool LD2410S::switchToMinimalMode()
 }
 ```
 
-### - Read the firmware version command
+### - [Read the firmware version command](#--read-the-firmware-version-command)
 ![Read the firmware version command](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Read%20the%20firmware%20version%20command.png)
 
 ``` cpp
@@ -158,7 +173,7 @@ bool LD2410S::readFirmwareVersion(uint16_t &major, uint16_t &minor, uint16_t &pa
 }
 ```
 
-### - Enable configuration command
+### - [Enable configuration command](#--enable-configuration-command)
 ![Enable configuration command](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Enable%20configuration%20command.png)
 
 ``` cpp
@@ -188,7 +203,7 @@ bool LD2410S::enterConfigMode()
     return false;
 }
 ```
-### - End configuration command
+### - [End configuration command](#--end-configuration-command)
 ![End configuration command](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/End%20configuration%20command.png)
 
 ``` cpp
@@ -218,14 +233,14 @@ bool LD2410S::exitConfigMode()
 }
 ```
 
-### - Write Serial number command
+### - [Write Serial number command](#--write-serial-number-command)
 ![Write Serial number command](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Write%20Serial%20number%20command.png)
 
 ``` cpp
 
 ```
 
-### - Read serial number command
+### - [Read serial number command](#--read-serial-number-command)
 ![Read serial number command](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Read%20serial%20number%20command.png)
 
 ``` cpp
@@ -278,7 +293,7 @@ bool LD2410S::readSerialNumber(char *buffer, size_t len)
 ```
 
 
-### - Write generic parameter commands
+### - [Write generic parameter commands](#--write-generic-parameter-commands)
 ![Write generic parameter commands](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Write%20generic%20parameter%20commands.png)
 
 ``` cpp
@@ -333,7 +348,7 @@ bool LD2410S::writeGenericParametersCommand()
 ```
 
 
-### - Read common parameter commands
+### - [Read common parameter commands](#--read-common-parameter-commands)
 ![Read common parameter commands](https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Read%20common%20parameter%20commands.png)
 
 
@@ -391,7 +406,7 @@ bool LD2410S::readCommonParametersCommand(uint32_t &farthest_distance, uint32_t 
 }
 ```
 
-## 📦 Example Code (ESP32)
+## 📦 [Example Code (ESP32)](#-example-code-esp32)
 ``` cpp
 
 #include <Arduino.h>
