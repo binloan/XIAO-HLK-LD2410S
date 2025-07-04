@@ -1,7 +1,3 @@
 title: Arduino with HLK-LD2410S
 description: radar module HLK-LD2410S
-just_the_docs:
-  collections:
-    docs:
-      output: true
-      permalink: "/:collection/:path/"
+theme: just-the-docs
