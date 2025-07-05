@@ -14,6 +14,8 @@ Arduino library for **low power human presence sensor**  module **HLK-LD2410S**
 
 ---
 
+## [Library structure (Doxygen)](https://phuongnamzz.github.io/HLK-LD2410S/class_l_d2410_s.html)
+## [Pages html](https://phuongnamzz.github.io/HLK-LD2410S/Readme.html)
 ## 🧭 [Module Types](#-module-types)
 
 <p float="left">
