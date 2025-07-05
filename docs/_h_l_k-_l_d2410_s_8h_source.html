@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LD2410S Arduino Library: LD2410S.h Source File</title>
+<title>My Project: HLK-LD2410S.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LD2410S Arduino Library
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -62,7 +62,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('_l_d2410_s_8h_source.html','',''); });
+$(function(){initNavTree('_h_l_k-_l_d2410_s_8h_source.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -88,15 +88,15 @@ $(function(){initNavTree('_l_d2410_s_8h_source.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">LD2410S.h</div></div>
+  <div class="headertitle"><div class="title">HLK-LD2410S.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_l_d2410_s_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="_l_d2410_s_8h.html#af82c2ddfdbfa8aef2c8a377336b87b62">   16</a></span><span class="preprocessor">#define LD2410S_ENABLE_LOG 0</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define LD2410S_ENABLE_LOG 0</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#if LD2410S_ENABLE_LOG</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define LD2410S_LOG(...) Serial.printf(__VA_ARGS__)</span></div>
@@ -152,26 +152,26 @@ $(function(){initNavTree('_l_d2410_s_8h_source.html','',''); });
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    uint16_t _distance = 0;  </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
 </div>
-<div class="ttc" id="aclass_l_d2410_s_html_a1613a59136235899a7ffa6053553315d"><div class="ttname"><a href="class_l_d2410_s.html#a1613a59136235899a7ffa6053553315d">LD2410S::isMotionDetected</a></div><div class="ttdeci">bool isMotionDetected() const</div><div class="ttdoc">Check if motion is currently detected.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:278</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_a18cebf1ec6496f2333d5561c1d65a739"><div class="ttname"><a href="class_l_d2410_s.html#a18cebf1ec6496f2333d5561c1d65a739">LD2410S::readFirmwareVersion</a></div><div class="ttdeci">bool readFirmwareVersion(uint16_t &amp;major, uint16_t &amp;minor, uint16_t &amp;patch)</div><div class="ttdoc">Read firmware version of the sensor.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:552</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_a6278afcb63c7922f7a002ff113706f36"><div class="ttname"><a href="class_l_d2410_s.html#a6278afcb63c7922f7a002ff113706f36">LD2410S::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Read and process incoming frames (non-blocking)</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:181</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_a6b4fbc0f321a830fad5aba4265737b95"><div class="ttname"><a href="class_l_d2410_s.html#a6b4fbc0f321a830fad5aba4265737b95">LD2410S::switchToMinimalMode</a></div><div class="ttdeci">bool switchToMinimalMode()</div><div class="ttdoc">Switch to minimal output mode (shorter packets)</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:128</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_a8a1f315dcec4e09a49e4042aa6d1d57e"><div class="ttname"><a href="class_l_d2410_s.html#a8a1f315dcec4e09a49e4042aa6d1d57e">LD2410S::switchToStandardMode</a></div><div class="ttdeci">bool switchToStandardMode()</div><div class="ttdoc">Switch to standard output mode (detailed)</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:82</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_a9b9536106e02027beb975a678f4b114f"><div class="ttname"><a href="class_l_d2410_s.html#a9b9536106e02027beb975a678f4b114f">LD2410S::LD2410S</a></div><div class="ttdeci">LD2410S(HardwareSerial &amp;serial, int rxPin, int txPin)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:18</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_aa05ebd1d3ba0083afea8f4990a4e4c7d"><div class="ttname"><a href="class_l_d2410_s.html#aa05ebd1d3ba0083afea8f4990a4e4c7d">LD2410S::exitConfigMode</a></div><div class="ttdeci">bool exitConfigMode()</div><div class="ttdoc">Exit configuration mode.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:370</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_aa7ff80259bca36fc50753e259b252f23"><div class="ttname"><a href="class_l_d2410_s.html#aa7ff80259bca36fc50753e259b252f23">LD2410S::begin</a></div><div class="ttdeci">bool begin(uint32_t baudrate=115200)</div><div class="ttdoc">Initialize serial communication and enter config mode.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:41</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_aadb4b8f86dbefa26ec55d594b97ae23b"><div class="ttname"><a href="class_l_d2410_s.html#aadb4b8f86dbefa26ec55d594b97ae23b">LD2410S::enterConfigMode</a></div><div class="ttdeci">bool enterConfigMode()</div><div class="ttdoc">Enter configuration mode.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:334</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_a1613a59136235899a7ffa6053553315d"><div class="ttname"><a href="class_l_d2410_s.html#a1613a59136235899a7ffa6053553315d">LD2410S::isMotionDetected</a></div><div class="ttdeci">bool isMotionDetected() const</div><div class="ttdoc">Check if motion is currently detected.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:278</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_a18cebf1ec6496f2333d5561c1d65a739"><div class="ttname"><a href="class_l_d2410_s.html#a18cebf1ec6496f2333d5561c1d65a739">LD2410S::readFirmwareVersion</a></div><div class="ttdeci">bool readFirmwareVersion(uint16_t &amp;major, uint16_t &amp;minor, uint16_t &amp;patch)</div><div class="ttdoc">Read firmware version of the sensor.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:552</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_a6278afcb63c7922f7a002ff113706f36"><div class="ttname"><a href="class_l_d2410_s.html#a6278afcb63c7922f7a002ff113706f36">LD2410S::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Read and process incoming frames (non-blocking)</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:181</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_a6b4fbc0f321a830fad5aba4265737b95"><div class="ttname"><a href="class_l_d2410_s.html#a6b4fbc0f321a830fad5aba4265737b95">LD2410S::switchToMinimalMode</a></div><div class="ttdeci">bool switchToMinimalMode()</div><div class="ttdoc">Switch to minimal output mode (shorter packets)</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:128</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_a8a1f315dcec4e09a49e4042aa6d1d57e"><div class="ttname"><a href="class_l_d2410_s.html#a8a1f315dcec4e09a49e4042aa6d1d57e">LD2410S::switchToStandardMode</a></div><div class="ttdeci">bool switchToStandardMode()</div><div class="ttdoc">Switch to standard output mode (detailed)</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:82</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_a9b9536106e02027beb975a678f4b114f"><div class="ttname"><a href="class_l_d2410_s.html#a9b9536106e02027beb975a678f4b114f">LD2410S::LD2410S</a></div><div class="ttdeci">LD2410S(HardwareSerial &amp;serial, int rxPin, int txPin)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:18</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_aa05ebd1d3ba0083afea8f4990a4e4c7d"><div class="ttname"><a href="class_l_d2410_s.html#aa05ebd1d3ba0083afea8f4990a4e4c7d">LD2410S::exitConfigMode</a></div><div class="ttdeci">bool exitConfigMode()</div><div class="ttdoc">Exit configuration mode.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:370</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_aa7ff80259bca36fc50753e259b252f23"><div class="ttname"><a href="class_l_d2410_s.html#aa7ff80259bca36fc50753e259b252f23">LD2410S::begin</a></div><div class="ttdeci">bool begin(uint32_t baudrate=115200)</div><div class="ttdoc">Initialize serial communication and enter config mode.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:41</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_aadb4b8f86dbefa26ec55d594b97ae23b"><div class="ttname"><a href="class_l_d2410_s.html#aadb4b8f86dbefa26ec55d594b97ae23b">LD2410S::enterConfigMode</a></div><div class="ttdeci">bool enterConfigMode()</div><div class="ttdoc">Enter configuration mode.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:334</div></div>
 <div class="ttc" id="aclass_l_d2410_s_html_ab3decffac7ffd54fa46d92c48c2897e6"><div class="ttname"><a href="class_l_d2410_s.html#ab3decffac7ffd54fa46d92c48c2897e6">LD2410S::~LD2410S</a></div><div class="ttdeci">~LD2410S()</div><div class="ttdoc">Destructor.</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_ab8a7dee96d99a637601168baa8173b22"><div class="ttname"><a href="class_l_d2410_s.html#ab8a7dee96d99a637601168baa8173b22">LD2410S::getDistance</a></div><div class="ttdeci">uint16_t getDistance() const</div><div class="ttdoc">Get target distance.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:291</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_ae459c8cc6d40e22ee8bfc3c78d3651ea"><div class="ttname"><a href="class_l_d2410_s.html#ae459c8cc6d40e22ee8bfc3c78d3651ea">LD2410S::readCommonParametersCommand</a></div><div class="ttdeci">bool readCommonParametersCommand(uint32_t &amp;farthest_distance, uint32_t &amp;nearest_distance, uint32_t &amp;delay_time, uint32_t &amp;freq_status, uint32_t &amp;freq_distance, uint32_t &amp;respond_speed)</div><div class="ttdoc">Read configuration parameters from sensor.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:489</div></div>
-<div class="ttc" id="aclass_l_d2410_s_html_ae4bf03e8ee44d2eb38f11cd7413d2d7f"><div class="ttname"><a href="class_l_d2410_s.html#ae4bf03e8ee44d2eb38f11cd7413d2d7f">LD2410S::readSerialNumber</a></div><div class="ttdeci">bool readSerialNumber(char *buffer, size_t len)</div><div class="ttdoc">Read 8-byte serial number.</div><div class="ttdef"><b>Definition</b> LD2410S.cpp:614</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_ab8a7dee96d99a637601168baa8173b22"><div class="ttname"><a href="class_l_d2410_s.html#ab8a7dee96d99a637601168baa8173b22">LD2410S::getDistance</a></div><div class="ttdeci">uint16_t getDistance() const</div><div class="ttdoc">Get target distance.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:291</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_ae459c8cc6d40e22ee8bfc3c78d3651ea"><div class="ttname"><a href="class_l_d2410_s.html#ae459c8cc6d40e22ee8bfc3c78d3651ea">LD2410S::readCommonParametersCommand</a></div><div class="ttdeci">bool readCommonParametersCommand(uint32_t &amp;farthest_distance, uint32_t &amp;nearest_distance, uint32_t &amp;delay_time, uint32_t &amp;freq_status, uint32_t &amp;freq_distance, uint32_t &amp;respond_speed)</div><div class="ttdoc">Read configuration parameters from sensor.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:489</div></div>
+<div class="ttc" id="aclass_l_d2410_s_html_ae4bf03e8ee44d2eb38f11cd7413d2d7f"><div class="ttname"><a href="class_l_d2410_s.html#ae4bf03e8ee44d2eb38f11cd7413d2d7f">LD2410S::readSerialNumber</a></div><div class="ttdeci">bool readSerialNumber(char *buffer, size_t len)</div><div class="ttdoc">Read 8-byte serial number.</div><div class="ttdef"><b>Definition</b> HLK-LD2410S.cpp:614</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="_l_d2410_s_8h.html">LD2410S.h</a></li>
+    <li class="navelem"><b>HLK-LD2410S.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

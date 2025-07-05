@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "LD2410S Arduino Library", "index.html", [
+  [ "My Project", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -34,18 +34,14 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_l_d2410_s_8h.html"
+"_h_l_k-_l_d2410_s_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

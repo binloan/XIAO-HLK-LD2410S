@@ -1,4 +1,4 @@
-<h1 id="hlk-ld2410s">HLK-LD2410S</h1>
+<h1 id="-hlk-ld2410s-hlk-ld2410s-"><a href="#hlk-ld2410s">HLK-LD2410S</a></h1>
 <p>Arduino library for <strong>low power human presence sensor</strong>  module <strong>HLK-LD2410S</strong></p>
 <p><a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 <a href="https://github.com/phuongnamzz/HLK-LD2410S/stargazers"><img src="https://img.shields.io/github/stars/phuongnamzz/HLK-LD2410S" alt="GitHub stars"></a>
@@ -9,22 +9,40 @@
 <img src="https://img.shields.io/badge/PlatformIO-Library-orange" alt="PlatformIO"></p>
 <p>📁 <a href="https://drive.google.com/drive/folders/1lCQv3mfHJ3XKXzweeHPFnJ_8_D_EWEKk">📄 Official Documents &amp; Driver Files</a></p>
 <hr>
-<h2 id="-module-types">🧭 Module Types</h2>
+<h2 id="-module-types-module-types-">🧭 <a href="#-module-types">Module Types</a></h2>
 <p float="left">
   <img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/HLK-2410S_pinout.png" width="45%" />
   <img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/LD2410S.jpg" width="45%" />
 </p>
 
 <hr>
-<h2 id="overview">Overview</h2>
-<p>The <strong>HLK-LD2410S</strong> is a battery-powered ultra-low-power milimeter-wave sensor based on Hi-Link&#39;s milimeter-wave sensor chip.</p>
+<h2 id="-table-of-contents">📚 Table of Contents</h2>
 <ul>
+<li><a href="#hlk-ld2410s">HLK-LD2410S</a></li>
+<li><a href="#-module-types">Module Types</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#️-important-notes">Important Notes</a></li>
+<li><a href="#-pin-description">Pin Description</a></li>
+<li><a href="#-esp32-connection-table">ESP32 Connection Table</a></li>
+<li><a href="#-serial-protocols">Serial Protocols</a><ul>
+<li><a href="#--switch-the-module-output-mode">Switch the module output mode</a></li>
+<li><a href="#--read-the-firmware-version-command">Read the firmware version command</a></li>
+<li><a href="#--enable-configuration-command">Enable configuration command</a></li>
+<li><a href="#--end-configuration-command">End configuration command</a></li>
+<li><a href="#--write-serial-number-command">Write Serial number command</a></li>
+<li><a href="#--read-serial-number-command">Read serial number command</a></li>
+<li><a href="#--write-generic-parameter-commands">Write generic parameter commands</a></li>
+<li><a href="#--read-common-parameter-commands">Read common parameter commands</a></li>
+</ul>
+</li>
+<li><a href="#-example-code-esp32">Example Code (ESP32)</a><h2 id="-overview-overview-"><a href="#overview">Overview</a></h2>
+The <strong>HLK-LD2410S</strong> is a battery-powered ultra-low-power milimeter-wave sensor based on Hi-Link&#39;s milimeter-wave sensor chip.</li>
 <li>Intergrated intelligent milimeter wave sensor SoC 24GHz </li>
 <li>Uses millimeter wave sensor distance measurement technology and ICL1112 chip
 advanced proprietary radar signal processing and low power control technology to achieve accurate
 perception of moving, micromotion and standing human body.</li>
 </ul>
-<h2 id="-important-notes">⚠️ Important Notes</h2>
+<h2 id="-important-notes-important-notes-">⚠️ <a href="#️-important-notes">Important Notes</a></h2>
 <ul>
 <li>Power supply 3.0 -3.6V , recommend 3.3V</li>
 <li>Average working current max 0.6mA </li>
@@ -41,9 +59,9 @@ hexadecimal.</li>
 </ul>
 </li>
 </ul>
-<h2 id="-pin-description">🧷 Pin Description</h2>
+<h2 id="-pin-description-pin-description-">🧷 <a href="#-pin-description">Pin Description</a></h2>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/pinout.png" alt="Pin description"></p>
-<h2 id="-esp32-connection-table">🔗 ESP32 Connection Table</h2>
+<h2 id="-esp32-connection-table-esp32-connection-table-">🔗 <a href="#-esp32-connection-table">ESP32 Connection Table</a></h2>
 <table>
 <thead>
 <tr>
@@ -87,9 +105,9 @@ hexadecimal.</li>
 </tbody>
 </table>
 <hr>
-<h2 id="-serial-protocols">📟 Serial Protocols</h2>
+<h2 id="-serial-protocols-serial-protocols-">📟 <a href="#-serial-protocols">Serial Protocols</a></h2>
 <h3 id="-baudrate-115200_8n1-"><em>- Baudrate: 115200_8N1</em></h3>
-<h3 id="-switch-the-module-output-mode">- Switch the module output mode</h3>
+<h3 id="-switch-the-module-output-mode-switch-the-module-output-mode-">- <a href="#--switch-the-module-output-mode">Switch the module output mode</a></h3>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Switch%20the%20module%20output%20mode.png" alt="Switch the module output mode"></p>
 <pre><code class="lang-cpp">
 <span class="hljs-keyword">bool</span> LD2410S::switchToMinimalMode()
@@ -129,7 +147,7 @@ hexadecimal.</li>
     <span class="hljs-built_in">return</span> false;
 }
 </code></pre>
-<h3 id="-read-the-firmware-version-command">- Read the firmware version command</h3>
+<h3 id="-read-the-firmware-version-command-read-the-firmware-version-command-">- <a href="#--read-the-firmware-version-command">Read the firmware version command</a></h3>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Read%20the%20firmware%20version%20command.png" alt="Read the firmware version command"></p>
 <pre><code class="lang-cpp">
 <span class="hljs-keyword">bool</span> LD2410S::readFirmwareVersion(<span class="hljs-keyword">uint16_t</span> &amp;major, <span class="hljs-keyword">uint16_t</span> &amp;minor, <span class="hljs-keyword">uint16_t</span> &amp;patch)
@@ -174,7 +192,7 @@ hexadecimal.</li>
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<h3 id="-enable-configuration-command">- Enable configuration command</h3>
+<h3 id="-enable-configuration-command-enable-configuration-command-">- <a href="#--enable-configuration-command">Enable configuration command</a></h3>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Enable%20configuration%20command.png" alt="Enable configuration command"></p>
 <pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> LD2410S::enterConfigMode()
 {
@@ -202,7 +220,7 @@ hexadecimal.</li>
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<h3 id="-end-configuration-command">- End configuration command</h3>
+<h3 id="-end-configuration-command-end-configuration-command-">- <a href="#--end-configuration-command">End configuration command</a></h3>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/End%20configuration%20command.png" alt="End configuration command"></p>
 <pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> LD2410S::exitConfigMode()
 {
@@ -229,11 +247,11 @@ hexadecimal.</li>
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<h3 id="-write-serial-number-command">- Write Serial number command</h3>
+<h3 id="-write-serial-number-command-write-serial-number-command-">- <a href="#--write-serial-number-command">Write Serial number command</a></h3>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Write%20Serial%20number%20command.png" alt="Write Serial number command"></p>
 <pre><code class="lang-cpp">
 </code></pre>
-<h3 id="-read-serial-number-command">- Read serial number command</h3>
+<h3 id="-read-serial-number-command-read-serial-number-command-">- <a href="#--read-serial-number-command">Read serial number command</a></h3>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Read%20serial%20number%20command.png" alt="Read serial number command"></p>
 <pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> LD2410S::readSerialNumber(<span class="hljs-keyword">char</span> *<span class="hljs-built_in">buffer</span>, size_t len)
 {
@@ -280,7 +298,7 @@ hexadecimal.</li>
     <span class="hljs-built_in">return</span> false;
 }
 </code></pre>
-<h3 id="-write-generic-parameter-commands">- Write generic parameter commands</h3>
+<h3 id="-write-generic-parameter-commands-write-generic-parameter-commands-">- <a href="#--write-generic-parameter-commands">Write generic parameter commands</a></h3>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Write%20generic%20parameter%20commands.png" alt="Write generic parameter commands"></p>
 <pre><code class="lang-cpp">
 <span class="hljs-keyword">bool</span> LD2410S::writeGenericParametersCommand()
@@ -331,7 +349,7 @@ hexadecimal.</li>
     <span class="hljs-built_in">return</span> false;
 }
 </code></pre>
-<h3 id="-read-common-parameter-commands">- Read common parameter commands</h3>
+<h3 id="-read-common-parameter-commands-read-common-parameter-commands-">- <a href="#--read-common-parameter-commands">Read common parameter commands</a></h3>
 <p><img src="https://raw.githubusercontent.com/phuongnamzz/HLK-LD2410S/main/resources/Read%20common%20parameter%20commands.png" alt="Read common parameter commands"></p>
 <pre><code class="lang-cpp">
 <span class="hljs-keyword">bool </span>LD2410S::readCommonParametersCommand(uint32_t &amp;farthest_distance, uint32_t &amp;nearest_distance, uint32_t &amp;delay_time, uint32_t &amp;freq_status, uint32_t &amp;freq_distance, uint32_t &amp;respond_speed)
@@ -385,7 +403,7 @@ hexadecimal.</li>
     return false<span class="hljs-comment">;</span>
 }
 </code></pre>
-<h2 id="-example-code-esp32-">📦 Example Code (ESP32)</h2>
+<h2 id="-example-code-esp32-example-code-esp32-">📦 <a href="#-example-code-esp32">Example Code (ESP32)</a></h2>
 <pre><code class="lang-cpp">
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Arduino.h&gt;</span></span>
 <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"LD2410S.h"</span></span>

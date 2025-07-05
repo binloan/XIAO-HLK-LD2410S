@@ -1,4 +1,4 @@
 var files_dup =
 [
-    [ "LD2410S.h", "_l_d2410_s_8h.html", "_l_d2410_s_8h" ]
+    [ "HLK-LD2410S.h", "_h_l_k-_l_d2410_s_8h_source.html", null ]
 ];

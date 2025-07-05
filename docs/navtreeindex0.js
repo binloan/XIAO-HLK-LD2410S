@@ -1,8 +1,6 @@
 var NAVTREEINDEX0 =
 {
-"_l_d2410_s_8h.html":[1,0,0],
-"_l_d2410_s_8h.html#af82c2ddfdbfa8aef2c8a377336b87b62":[1,0,0,1],
-"_l_d2410_s_8h_source.html":[1,0,0],
+"_h_l_k-_l_d2410_s_8h_source.html":[1,0,0],
 "annotated.html":[0,0],
 "class_l_d2410_s.html":[0,0,0],
 "class_l_d2410_s.html#a1613a59136235899a7ffa6053553315d":[0,0,0,6],
@@ -22,8 +20,6 @@ var NAVTREEINDEX0 =
 "files.html":[1,0],
 "functions.html":[0,2,0],
 "functions_func.html":[0,2,1],
-"globals.html":[1,1,0],
-"globals_defs.html":[1,1,1],
 "index.html":[],
 "pages.html":[]
 };
