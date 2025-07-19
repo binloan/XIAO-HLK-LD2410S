@@ -11,12 +11,10 @@
  * Initializes the LD2410S sensor driver, associating it with the provided HardwareSerial instance
  * and configuring the RX and TX pins for communication.
  *
- * @param serial Reference to a HardwareSerial object used for UART communication with the sensor.
- * @param rxPin GPIO pin number used for receiving data from the sensor.
- * @param txPin GPIO pin number used for transmitting data to the sensor.
+ * @param serial Reference to a HardwareSerial object used for Uart communication with the sensor.
  */
-LD2410S::LD2410S(HardwareSerial &serial, int rxPin, int txPin)
-    : _serial(serial), _rxPin(rxPin), _txPin(txPin), _motion(false), _distance(0) {}
+LD2410S::LD2410S(Uart &serial)
+    : _serial(serial), _motion(false), _distance(0) {}
 
 
 /**
@@ -40,7 +38,8 @@ LD2410S::~LD2410S() = default;
  */
 bool LD2410S::begin(uint32_t baudrate)
 {
-    _serial.begin(baudrate, SERIAL_8N1, _rxPin, _txPin);
+
+    _serial.begin(baudrate, SERIAL_8N1);
     delay(100);
 
     for (int i = 0; i < 2; ++i)
@@ -84,9 +83,9 @@ bool LD2410S::switchToStandardMode()
     sendFrameHead();
 
     _serial.write(0x08);
-    _serial.write(0x00);
+    _serial.write((byte) 0x00);
     _serial.write(0x7A);
-    _serial.write(0x00);
+    _serial.write((byte) 0x00);
 
     const uint8_t param[6] = {0x00, 0x00, 0x01, 0x00, 0x00, 0x00};
     _serial.write(param, sizeof(param));
@@ -130,9 +129,9 @@ bool LD2410S::switchToMinimalMode()
     sendFrameHead();
 
     _serial.write(0x08);
-    _serial.write(0x00);
+    _serial.write((byte) 0x00);
     _serial.write(0x7A);
-    _serial.write(0x00);
+    _serial.write((byte) 0x00);
 
     const uint8_t param[6] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
     _serial.write(param, sizeof(param));

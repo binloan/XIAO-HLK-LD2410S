@@ -33,10 +33,8 @@ public:
     /**
      * @brief Constructor
      * @param serial Reference to HardwareSerial object
-     * @param rxPin GPIO used for sensor TX
-     * @param txPin GPIO used for sensor RX
      */
-    LD2410S(HardwareSerial &serial, int rxPin, int txPin);
+    LD2410S(Uart &serial);
 
     /**
      * @brief Destructor
@@ -145,7 +143,7 @@ private:
      */
     bool writeGenericParametersCommand();
 
-    HardwareSerial &_serial; ///< Reference to serial port
+    Uart &_serial; ///< Reference to serial port
     int _rxPin;              ///< GPIO used for sensor TX
     int _txPin;              ///< GPIO used for sensor RX
     bool _motion = false;    ///< Internal motion state
